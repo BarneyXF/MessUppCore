@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="NLog" Version="4.5.0-beta07" />
+    <PackageReference Include="NLog.Config" Version="4.4.12" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.0.0-rtm-rc1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MessUppCore.Constants\MessUppCore.Constants.csproj" />
+    <ProjectReference Include="..\MessUppCore.DataLayer.Sql\MessUppCore.DataLayer.Sql.csproj" />
+    <ProjectReference Include="..\MessUppCore.DataLayer\MessUppCore.DataLayer.csproj" />
+    <ProjectReference Include="..\MessUppCore.Model\MessUppCore.Model.csproj" />
+  </ItemGroup>
+
+</Project>
